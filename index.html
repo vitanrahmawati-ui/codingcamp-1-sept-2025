@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app">
+    <h1>My To-Do List ✨</h1>
+
+    <!-- Form Input -->
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Enter your task..."/>
+      <input type="date" id="date-input"/>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Filter -->
+    <div class="filter">
+      <label for="filter">Filter:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="today">Today</option>
+        <option value="upcoming">Upcoming</option>
+      </select>
+    </div>
+
+    <!-- List -->
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
